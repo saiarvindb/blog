@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavigationBar } from "./components/navigationBar";
 import { About } from "./pages/about/about";
 import { Socials } from "./pages/socials/socials";
+import { Posts } from "./pages/posts/posts";
+import { BlogPage } from "./components/blogPage";
+import Tinytex from "./pages/posts/tinytex.mdx";
 
 const Blog : FC<{}> = ({}) =>
 {
@@ -27,6 +30,8 @@ const Blog : FC<{}> = ({}) =>
 			<Routes>
 				<Route path="/" element={<About/>}/>
 				<Route path="/socials" element={<Socials/>}/>
+				<Route path="/posts" element={<Posts/>}/>
+	            <Route path="/posts/tinytex" element={<BlogPage title={"tinytex"} markdownContent={<Tinytex/>}/>} />
 			</Routes>
 		</BrowserRouter>
 	</div>

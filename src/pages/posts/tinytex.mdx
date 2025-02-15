@@ -1,0 +1,148 @@
+# Using TinyTeX in R to Install LaTeX Packages
+
+LaTeX is widely used for creating high-quality documents, and R integrates with LaTeX for rendering R Markdown (`.Rmd`) files or compiling `.tex` documents. Instead of installing the full **TeX Live** distribution, you can use **TinyTeX**, a lightweight version that installs only the necessary packages on demand.
+
+---
+
+## 1. Installing TinyTeX in R
+
+First, install the `tinytex` package in R:
+
+```r
+install.packages("tinytex")
+tinytex::install_tinytex()  # Installs TinyTeX (a minimal LaTeX distribution)
+```
+
+This installs a lightweight TeX system that can be extended by installing additional LaTeX packages as needed.
+
+---
+
+## 2. Automatically Installing Required LaTeX Packages
+
+### Option 1: Let TinyTeX Install Packages On Demand
+
+When compiling a `.tex` document or rendering an R Markdown file, **TinyTeX automatically detects and installs missing LaTeX packages**.
+
+For example, if you compile a LaTeX document in R:
+
+```r
+tinytex::latexmk("document.tex")
+```
+
+or render an R Markdown file:
+
+```r
+rmarkdown::render("document.Rmd")
+```
+
+TinyTeX will detect missing LaTeX dependencies and install them automatically.
+
+### Option 2: Manually Install a LaTeX Package
+
+If you know which package you need, you can install it manually:
+
+```r
+tinytex::tlmgr_install("packagename")
+```
+
+For example, to install the `amsmath` package:
+
+```r
+tinytex::tlmgr_install("amsmath")
+```
+
+To install multiple packages at once:
+
+```r
+tinytex::tlmgr_install(c("geometry", "xcolor", "hyperref"))
+```
+
+---
+
+## 3. Checking for Missing Dependencies
+
+To check for missing LaTeX packages before compiling, use:
+
+```r
+tinytex::tlmgr_check()
+```
+
+This scans your system and reports any missing LaTeX dependencies.
+
+If you want to install all missing packages at once:
+
+```r
+tinytex::tlmgr_install(tinytex::tl_pkgs())
+```
+
+---
+
+## 4. Removing or Updating LaTeX Packages
+
+### Remove an Installed LaTeX Package
+
+If you no longer need a package, remove it with:
+
+```r
+tinytex::tlmgr_remove("packagename")
+```
+
+### Update TinyTeX and Installed Packages
+
+To update all installed LaTeX packages:
+
+```r
+tinytex::tlmgr_update("--all")
+```
+
+To update TinyTeX itself:
+
+```r
+tinytex::tlmgr_update()
+```
+
+---
+
+## 5. Why Use TinyTeX Instead of TeX Live?
+
+✅ **Minimal installation** – Only installs what you need, saving disk space.  
+✅ **Automatic package installation** – Detects and installs missing LaTeX packages on demand.  
+✅ **Easy management** – Install, update, and remove packages within R.  
+✅ **Cross-platform** – Works on Windows, macOS, and Linux.  
+
+---
+
+## 6. Example Workflow
+
+Here's a complete example:
+
+1. **Install TinyTeX in R:**
+
+    ```r
+    install.packages("tinytex")
+    tinytex::install_tinytex()
+    ```
+
+2. **Render an R Markdown file (automatically installs LaTeX dependencies):**
+
+    ```r
+    rmarkdown::render("report.Rmd")
+    ```
+
+3. **Check and install missing LaTeX packages manually (optional):**
+
+    ```r
+    tinytex::tlmgr_check()
+    tinytex::tlmgr_install(tinytex::tl_pkgs())
+    ```
+
+---
+
+## 7. Conclusion
+
+Instead of installing the full **TeX Live** distribution, you can use **TinyTeX** in R to **install only the LaTeX packages you need**. This saves space, ensures smooth compilation, and allows missing packages to be installed automatically.
+
+---
+
+Save this as **`tinytex-guide.md`**, and you’re good to go! 🚀
+
