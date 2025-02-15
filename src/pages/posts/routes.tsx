@@ -1,8 +1,8 @@
 import { FC, ReactNode } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Posts } from "../posts";
-import { BlogPage } from "../../../components/blogPage";
-import TinyTex from "./tinytex.mdx";
+import { Posts } from "./posts";
+import { BlogPage } from "../../components/blogPage";
+import TinyTex from "./articles/tinytex.mdx";
 
 const ArticleRoutes : FC<{}> = ({}) =>
 {

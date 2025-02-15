@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavigationBar } from "./components/navigationBar";
 import { About } from "./pages/about/about";
 import { Socials } from "./pages/socials/socials";
-import { ArticleRoutes } from "./pages/posts/articles/routes";
+import { ArticleRoutes } from "./pages/posts/routes";
 
 const Blog : FC<{}> = ({}) =>
 {
