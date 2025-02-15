@@ -9,7 +9,7 @@ const ArticleRoutes : FC<{}> = ({}) =>
 	const articleRoutes : ReactNode =
 	<Routes>
 		<Route path="" element={<Posts/>}/>
-		<Route path="tinytex" element={<BlogPage title={"tinytex"} markdownContent={<TinyTex/>}/>}/>
+		<Route path="tinytex" element={<BlogPage title={"TinyTex"} markdownContent={<TinyTex/>}/>}/>
 	</Routes>;
 	return articleRoutes;
 }
