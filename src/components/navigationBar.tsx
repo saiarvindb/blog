@@ -40,9 +40,11 @@ const NavigationBar : FC<{}> = ({}) =>
 
 	const navigationBar : ReactNode = 
 	<div style={styles.navigationBar}>
-		<NavButton value="/" display="Home"/>
+		<NavButton value="/" display="About"/>
 		<NavButton value="/socials" display="Socials"/>
 		<NavButton value="/posts" display="Posts"/>
+		{/* <NavButton value="/notes" display="Notes"/> */}
+		{/* <NavButton value="/projects" display="Projects"/> */}
 	</div>;
 	return navigationBar;
 }

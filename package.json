@@ -19,7 +19,7 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && touch dist/_redirects && echo \"/* /index.html  200\" > dist/_redirects",
+		"build": "vite build && echo \"/* /index.html  200\" > dist/_redirects",
 		"preview": "vite preview",
 		"clean": "rm -rf dist/"
 	}
