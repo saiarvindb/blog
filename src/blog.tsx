@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavigationBar } from "./components/navigationBar";
 import { About } from "./pages/about/about";
 import { Socials } from "./pages/socials/socials";
-import { ArticleRoutes } from "./pages/posts/routes";
+import { ArticleRoutes } from "./pages/posts/posts";
+import { CourseRoutes } from "./pages/notes/notes";
 
 const Blog : FC<{}> = ({}) =>
 {
@@ -29,6 +30,7 @@ const Blog : FC<{}> = ({}) =>
 				<Route path="" element={<About/>}/>
 				<Route path="socials" element={<Socials/>}/>
 				<Route path="posts/*" element={<ArticleRoutes/>}/>
+				<Route path="notes/*" element={<CourseRoutes/>} />
 			</Routes>
 		</BrowserRouter>
 	</div>

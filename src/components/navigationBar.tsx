@@ -43,8 +43,8 @@ const NavigationBar : FC<{}> = ({}) =>
 		<NavButton value="/" display="About"/>
 		<NavButton value="/socials" display="Socials"/>
 		<NavButton value="/posts" display="Posts"/>
-		{/* <NavButton value="/notes" display="Notes"/> */}
-		{/* <NavButton value="/projects" display="Projects"/> */}
+		<NavButton value="/notes" display="Notes"/>
+		<NavButton value="/projects" display="Projects"/>
 	</div>;
 	return navigationBar;
 }
