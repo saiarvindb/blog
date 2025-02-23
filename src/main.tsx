@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { Blog } from "./blog";
+import { Blog } from "./blog.tsx";
 
 const favicon : string = new URL("./face.webp", import.meta.url).href;
 const link = document.createElement("link");

@@ -1,10 +1,10 @@
 import { CSSProperties, FC, ReactNode } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { NavigationBar } from "./components/navigationBar";
-import { About } from "./pages/about/about";
-import { Socials } from "./pages/socials/socials";
-import { ArticleRoutes } from "./pages/posts/posts";
-import { CourseRoutes } from "./pages/notes/notes";
+import { CourseRoutes } from "./pages/notes/notes.tsx";
+import { NavigationBar } from "./components/navigationBar.tsx";
+import { About } from "./pages/about/about.tsx";
+import { Socials } from "./pages/socials/socials.tsx";
+import { ArticleRoutes } from "./pages/posts/routes.tsx";
 
 const Blog : FC<{}> = ({}) =>
 {
