@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { BlogPage } from "../../components/blogPage";
+import { BlogPage } from "../../components/blogPage.tsx";
 import MarkdownContent from "./posts.mdx";
 
 const Posts : FC<{}> = ({}) => 
@@ -8,7 +8,7 @@ const Posts : FC<{}> = ({}) =>
 	const markdownContent : ReactNode = <MarkdownContent/>;
 	const posts : ReactNode = 
 	<div>
-		<BlogPage title={title} markdownContent={markdownContent}/>
+		{/* <BlogPage title={title} markdownContent={markdownContent}/> */}
 	</div>
 	return posts;
 };

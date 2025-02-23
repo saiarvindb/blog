@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { BlogPage } from "../../components/blogPage";
+import { BlogPage } from "../../components/blogPage.tsx";
 import MarkdownContent from "./about.mdx";
 
 const About : FC<{}> = ({}) => 
