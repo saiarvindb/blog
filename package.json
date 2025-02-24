@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"dev": "webpack-dev-server",
-		"build": "webpack --mode=production",
+		"build": "webpack --mode=production && echo \"/* /index.html  200\" > dist/_redirects",
 		"clean": "rm -rf dist/",
 		"clean:full": "rm -rf dist/ node_modules/"
 	}
