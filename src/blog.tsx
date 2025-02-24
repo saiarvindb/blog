@@ -1,11 +1,10 @@
 import { CSSProperties, FC, ReactNode } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CourseRoutes } from "./pages/notes/notes.tsx";
 import { NavigationBar } from "./components/navigationBar.tsx";
 import { About } from "./pages/about/about.tsx";
 import { Socials } from "./pages/socials/socials.tsx";
-import { ArticleRoutes } from "./pages/posts/routes.tsx";
-
+import { ArticleRoutes } from "./pages/posts/posts.tsx";
+import { CourseRoutes } from "./pages/notes/notes.tsx";
 
 const Blog : FC<{}> = ({}) =>
 {

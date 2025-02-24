@@ -1,5 +1,4 @@
 import { CSSProperties, FC, ReactNode } from "react";
-import { Link } from "react-router-dom";
 
 const BlogPage : FC<{title : string, markdownContent : ReactNode}> = ({title, markdownContent}) =>
 {
