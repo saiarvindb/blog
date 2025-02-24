@@ -1,12 +1,9 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import {NavLink} from "../../components/navLink.tsx";
 
-<BrowserRouter>
-<Link to="posts/workspace" onClick={() => window.location.replace("/posts/workspace")} style={{color: "inherit"}}>
-My VS Code workspace -  *I put it here so I can download it from anywhere without having to go to github :P.* 
-</Link>
-  
-  
-<Link to="posts/tinytex" onClick={() => window.location.replace("/posts/tinytex")} style={{color: "inherit"}}>
-Tinytex -  *A convenient way to work with latex on linux without requiring the full texlive installation.* 
-</Link>
-</BrowserRouter>
+<NavLink to="workspace"> 
+	My VS Code workspace -  *I put it here so I can download it from anywhere without having to go to github :P.* 
+</NavLink>
+
+<NavLink to="tinytex">
+	Tinytex -  *A convenient way to work with latex on linux without requiring the full texlive installation.* 
+</NavLink>
