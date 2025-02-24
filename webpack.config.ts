@@ -25,7 +25,7 @@ const configuration : Configuration =
 		port: 3000,
 		historyApiFallback: true,
 		hot: true,
-		open: true
+		open: true,
 	},
 	entry :
 	{
@@ -36,6 +36,7 @@ const configuration : Configuration =
 		path : `${__dirname}/dist/`,
 		filename: `[name].js`,
 		publicPath: "/",
+		clean: true,
 	},
 	module :
 	{
@@ -48,10 +49,10 @@ const configuration : Configuration =
 					loader : "ts-loader",
 					options :
 					{
-						transpileOnly: true
-					}
+						transpileOnly: true,
+					},
 				},
-				exclude: /node_modules/
+				exclude: /node_modules/,
 			},
 			{
 				test : /\.mdx?$/,
@@ -62,13 +63,13 @@ const configuration : Configuration =
 						options:
 						{
 							jsxImportSource : "react",
-							providerImportSource : "@mdx-js/react"
+							providerImportSource : "@mdx-js/react",
 						}
 					},
 				],
-				exclude: /node_modules/
-			}
-		]
+				exclude: /node_modules/,
+			},
+		],
 	},
 	plugins:
 	[
