@@ -7,4 +7,9 @@ link.rel = "icon";
 link.href = favicon;
 document.head.appendChild(link)
 
-ReactDOM.createRoot(document.body).render(<Blog/>);
+const root = document.createElement("div");
+root.id = "blog";
+root.style.width = "100%";
+root.style.height = "100%";
+document.body.appendChild(root);
+ReactDOM.createRoot(root).render(<Blog/>);
