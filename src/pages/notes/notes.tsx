@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { BlogPage } from "../../components/blogPage";
+import { BlogPage } from "../../components/blogPage.tsx";
 import MarkdownContent from "./notes.mdx";
 import { Route, Routes } from "react-router-dom";
 import CO367 from "./courses/co/co367.mdx";
