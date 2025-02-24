@@ -37,9 +37,6 @@ const configuration : Configuration =
 		filename: `[name].js`,
 		publicPath: "/",
 	},
-	resolve:
-	{
-	},
 	module :
 	{
 		rules :
