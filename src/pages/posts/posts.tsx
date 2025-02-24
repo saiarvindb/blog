@@ -11,7 +11,7 @@ const Posts : FC<{}> = ({}) =>
 	const markdownContent : ReactNode = <MarkdownContent/>;
 	const posts : ReactNode = 
 	<div>
-		{/* <BlogPage title={title} markdownContent={markdownContent}/> */}
+		<BlogPage title={title} markdownContent={markdownContent}/>
 	</div>
 	return posts;
 };

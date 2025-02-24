@@ -17,7 +17,8 @@ const NavigationBar : FC<{}> = ({}) =>
 			border: "0",
 			color: "green",
 			backgroundColor: "inherit",
-			cursor: "pointer"
+			cursor: "pointer",
+			fontFamily: "inherit",
 		},
 		navButton :
 		{

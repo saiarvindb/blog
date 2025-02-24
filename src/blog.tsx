@@ -6,6 +6,7 @@ import { About } from "./pages/about/about.tsx";
 import { Socials } from "./pages/socials/socials.tsx";
 import { ArticleRoutes } from "./pages/posts/routes.tsx";
 
+
 const Blog : FC<{}> = ({}) =>
 {
 	const styles : Record<string, CSSProperties> = 
