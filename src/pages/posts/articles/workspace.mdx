@@ -1,0 +1,128 @@
+```
+{
+	"folders":
+	[
+		{
+			"path": ".",
+		},
+	],
+	"extensions": 
+	{
+		"recommendations": 
+		[
+			"kelvin.vscode-sshfs",
+			"ms-vscode.makefile-tools",
+			"tomoki1207.pdf"
+		],
+	},
+	"settings":
+	{
+		"workbench.panel.defaultLocation": "right",
+		"editor.renderWhitespace": "all",
+		"editor.minimap.enabled": false,
+		"editor.detectIndentation": false,
+		"files.associations":
+		{
+			"*.mdx": "markdown",
+		},
+		"[html]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[json]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[jsonc]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[jsonl]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[typescript]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[typescriptreact]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"[markdown]":
+		{
+			"editor.insertSpaces": false,
+			"editor.tabSize": 4,
+		},
+		"latex-workshop.latex.tools":
+		[
+			{
+				"name": "xelatex",
+				"command": "Rscript",
+				"args": 
+				[
+					"-e",
+					"tinytex::xelatex(commandArgs(trailingOnly=TRUE)[1], clean = FALSE);",
+					"%DOC_EXT%"
+				]
+			},
+			{
+				"name": "pdflatex",
+				"command": "Rscript",
+				"args": 
+				[
+					"-e",
+					"tinytex::latexmk(commandArgs(trailingOnly=TRUE)[1], clean = FALSE);",
+					"%DOC_EXT%"
+				]
+			},
+			{
+				"name": "clean",
+				"command": "/home/sab/bin/latexmk",
+				"args":
+				[
+					"-c",
+				]
+			},
+		],
+		"latex-workshop.latex.recipes": 
+		[
+			{
+				"name": "pdflatex",
+				"tools":
+				[
+					"pdflatex",
+					"clean"
+				]
+			},
+			{
+				"name": "xelatex",
+				"tools":
+				[
+					"xelatex",
+					"clean"
+				]
+			},
+		],
+		"latex-workshop.latex.build.forceRecipeUsage": false,
+		"latex-workshop.latex.build.rootfileInStatus": false,
+		"latex-workshop.synctex.afterBuild.enabled": false,
+		"terminal.integrated.shellIntegration.enabled" : false,
+		"terminal.integrated.profiles.linux": 
+		{
+			"zsh":
+			{
+				"path": "/usr/bin/zsh",
+				"args": ["-l"]
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "zsh"
+	}
+}
+```
