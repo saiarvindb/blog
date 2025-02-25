@@ -69,6 +69,14 @@ const configuration : Configuration =
 				],
 				exclude: /node_modules/,
 			},
+			{
+				test: /\.webp$/,
+				use: 
+				{
+					loader : "file-loader",
+				},
+				exclude: /node_modules/,
+			},
 		],
 	},
 	plugins:
