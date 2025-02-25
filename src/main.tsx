@@ -1,7 +1,7 @@
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { Blog } from "./blog.tsx";
+import favicon from "./face.webp";
 
-const favicon : string = new URL("./face.webp", import.meta.url).href;
 const link = document.createElement("link");
 link.rel = "icon";
 link.href = favicon;
@@ -12,4 +12,4 @@ root.id = "blog";
 root.style.width = "100%";
 root.style.height = "100%";
 document.body.appendChild(root);
-ReactDOM.createRoot(root).render(<Blog/>);
+createRoot(root).render(<Blog/>);
